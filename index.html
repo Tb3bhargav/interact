@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#170923" />
+    <title>Sanskrit Heritage — An Atlas of Living Wisdom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#top" aria-label="Sanskrit Heritage home">
+          <span class="wordmark-mark">ॐ</span>
+          <span>SANSKRIT<br />HERITAGE</span>
+        </a>
+        <div class="topbar-center"><span class="pulse"></span> LIVING ARCHIVE · 03 / 12</div>
+        <button id="menuButton" class="menu-button" type="button" aria-label="Open journey menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </header>
+
+      <aside id="journeyMenu" class="journey-menu" aria-hidden="true" inert>
+        <p class="eyebrow"><span class="eyebrow-line"></span> JOURNEY INDEX</p>
+        <p class="menu-sanskrit">&#x0938;&#x092E;&#x0930;&#x094D;&#x092A;&#x0923;</p>
+        <p>Choose a place to enter its living archive.</p>
+        <div class="menu-destinations">
+          <button data-destination="kashi"><span>01</span> Kashi <em>&#x0915;&#x093E;&#x0936;&#x0940;</em></button>
+          <button data-destination="ujjain"><span>02</span> Ujjain <em>&#x0909;&#x091C;&#x094D;&#x091C;&#x092F;&#x093F;&#x0928;&#x0940;</em></button>
+          <button data-destination="nalanda"><span>03</span> Nalanda <em>&#x0928;&#x093E;&#x0932;&#x0928;&#x094D;&#x0926;&#x093E;</em></button>
+        </div>
+        <button id="closeMenu" class="close-menu" type="button">Close <span>&times;</span></button>
+      </aside>
+
+      <main id="top">
+        <section class="hero" aria-label="Sanskrit Heritage destinations">
+          <div id="webgl" class="webgl" aria-hidden="true"></div>
+          <div class="grain" aria-hidden="true"></div>
+
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> AN ATLAS OF LIVING WISDOM</p>
+            <p id="destinationSanskrit" class="sanskrit-name">काशी</p>
+            <h1 id="destinationTitle">City of light,<br /><em>river of memory.</em></h1>
+            <p id="destinationDescription" class="description">At the bends of the Ganga, a thousand years of mantra, music and learning flow into the present.</p>
+            <div class="hero-actions">
+              <button id="exploreButton" class="explore-button" type="button">Enter the archive <span>↗</span></button>
+              <p class="scroll-note">SCROLL TO<br />JOURNEY</p>
+            </div>
+          </div>
+
+          <aside class="hero-meta">
+            <div><span>01</span><small>DESTINATION</small></div>
+            <div><span id="destinationYears">2000+ years</span><small>CONTINUITY</small></div>
+            <div><span>25.3176° N</span><small>LATITUDE</small></div>
+          </aside>
+
+          <div class="orbital-label label-one"><span></span><p id="orbitLabel">GANGA · KĀŚĪ</p></div>
+          <div class="orbital-label label-two"><span></span><p>RITUAL / RIVER / RHYTHM</p></div>
+          <p class="gesture-hint"><span>&#8596;</span> DRAG TO TRAVEL &middot; USE ARROW KEYS</p>
+
+          <div class="bottom-area">
+            <div class="destination-list" role="tablist" aria-label="Choose a destination">
+              <button class="destination active" data-destination="kashi" role="tab" aria-selected="true"><span>01</span> Kashi</button>
+              <button class="destination" data-destination="ujjain" role="tab" aria-selected="false"><span>02</span> Ujjain</button>
+              <button class="destination" data-destination="nalanda" role="tab" aria-selected="false"><span>03</span> Nalanda</button>
+            </div>
+            <div class="progress-wrap" aria-label="Destination progression"><span id="progressLabel">01 — 03</span><div class="progress-track"><i id="progressLine"></i></div></div>
+          </div>
+        </section>
+
+        <section class="intro-section">
+          <p class="eyebrow"><span class="eyebrow-line"></span> THE INVITATION</p>
+          <h2>Not a past preserved in glass.<br /><em>A civilization in motion.</em></h2>
+          <p>Move through sacred cities, forgotten universities and cosmic observatories—each a luminous thread in a continuously unfolding cultural fabric.</p>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

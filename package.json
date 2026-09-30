@@ -1,0 +1,11 @@
+{
+  "name": "sanskrit-heritage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A WebGL Sanskrit Heritage digital museum hero experience.",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check script.js && node --check server.mjs"
+  }
+}
